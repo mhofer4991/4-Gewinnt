@@ -1,0 +1,27 @@
+Client connects to server:
+
+Request from Client:
+
++-----------------------+-------------------------+
+|  Request_for_joining  | Random number (0 - 255) |
++-----------------------+-------------------------+
+
+Answer from Server:
+
++-----------------------+-------------------------+------------------------+--------------------------+
+|  Request_accepted     | Random number (0 - 255) |  GameMapRows (1 Byte)  |  GameMapColumns (1 Byte) |
++-----------------------+-------------------------+------------------------+--------------------------+
+
+Playing the game:
+
++-----------+-----------------+
+| Next_move | Column (1 Byte) |
++-----------+-----------------+
+
+
+
+Message types:
+
+- Request_for_joining
+- Request_accepted
+- Next_move
